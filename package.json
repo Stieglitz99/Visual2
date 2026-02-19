@@ -5,6 +5,11 @@
   "scripts": {
     "start": "cd src/Main && dotnet fable webpack -w --port free -- -w --config webpack.config.js -w",
     "build": "cd src/Main && dotnet fable webpack --port free -- --config webpack.config.js",
+    "mint-bootstrap": "bash ./scripts/mint-bootstrap.sh",
+    "mint-build": "bash ./scripts/mint-build.sh",
+    "mint-launch": "bash ./scripts/mint-launch.sh",
+    "mint-run": "bash ./scripts/mint-run.sh",
+    "mint-pack-linux": "bash ./scripts/mint-pack-linux.sh",
     "pack-all": "yarn run build && yarn pack-nobuild-win && yarn pack-nobuild-linux && yarn pack-nobuild-osx",
     "pack-nobuild-osx": "electron-packager . VisUAL2 --platform=darwin --arch=x64 --out=dist --prune --asar --ignore=/dist --ignore=/src --overwrite --icon=app/visual.ico.icns && yarn make-osx-dmg",
     "pack-nobuild-linux": "electron-packager . VisUAL2 --platform=linux --arch=x64 --out=dist --prune --asar --ignore=/dist --ignore=/src --overwrite && yarn cross-zip dist/visual2-linux-x64",

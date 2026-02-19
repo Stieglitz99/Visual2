@@ -9,6 +9,8 @@ paket-files
 dist/*
 test-results/*
 !test-results
+src/Main/v4.5
+src/Renderer/v4.5
 
 
 ## Ignore Visual Studio temporary files, build results, and

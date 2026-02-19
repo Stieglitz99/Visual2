@@ -151,6 +151,29 @@ It works around the fact that _packaging tools_ do not understand the non-standa
 
 If you just want to run Visual2 go to the [binaries repo](https://github.com/tomcl/V2releases)
 
+### Linux Mint 22.x quickstart (no sudo needed)
+
+For Linux Mint 22.x the legacy toolchain needs local compatibility setup (old .NET SDK/Fable/Electron).
+Use the provided scripts:
+
+```bash
+yarn mint-run
+```
+
+Or step by step:
+
+```bash
+yarn mint-bootstrap
+yarn mint-build
+yarn mint-launch
+```
+
+Optional Linux binary packaging:
+
+```bash
+yarn mint-pack-linux
+```
+
 1. Follow instructions to install [yarn](https://yarnpkg.com/lang/en/docs/install/) (which tell you to install Node as well).
 
 2. Download and install the latest (2.x) [Dotnet Core SDK](https://www.microsoft.com/net/learn/get-started).  
